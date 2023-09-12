@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+</head>
+
+<body>
+    <p id= "mywest">televison</p>
+
+    <script>
+        let tv = {
+            "screenColor": ["black", "blue"],
+            "size": 120,
+        };
+        
+        let parent = 2;
+        let child = 1;
+        let parents = {
+            parent: 1
+        };
+
+        document.write("child = " + parents[parent]);
+        console.log(parents);
+        console.log(Object.keys(parents))
+        console.log(Object.values(tv));
+        tv["screenColor"].push("silver");
+        document.write(tv["screenColor"]);
+        let myElement = document.createElement("p");
+        myElement.innerHTML = "My paragraph"
+        document.body.appendChild(myElement);
+
+        let myWestElement = document.getElementById("mywest");
+        let myButton = document.createElement("button");
+        myButton.innerHTML = "submit";
+        myWestElement.append(myButton);
+        document.body.appendChild(myButton);
+
+
+
+    </script>
+</body>
+
+</html>

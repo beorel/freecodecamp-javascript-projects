@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        #main1 {
+            background-image: url(download\ \(2\).jpeg);
+            color: white;
+
+        }
+
+        #main2 {
+            background-color: white;
+            opacity: 0.1;
+        }
+        #main3 {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main1">
+        <div id="main2">
+            <div id="main3">
+                <div id="title">
+                    <h1>Beauty survey form</h1>
+                </div>
+                <p id="description">thank you for taking out time to help us improve the platform</p>
+                <form id="survey-form">
+                    <label id="name-label">name</label><br>
+                    <input type="text" placeholder="name" required><br><br>
+
+                    <label id="email-label">email</label><br>
+                    <input type="email" placeholder="email" required><br><br>
+
+                    <label id="number-label">number</label><br>
+                    <input type="number" placeholder="number" min="1" max="3">
+                    <br><br>
+
+                    <label id="option">which option best describes your current role?</label><br>
+                    <select id="option">
+                        <option value="student">student</option>
+                        <option value="full-time">full-time</option>
+                        <option value="part-time">part-time</option>
+                        <option value="full-time-learner">full-time-learner</option>
+                    </select>
+                    <br><br>
+                    <label id="recommended-label">would you recommend Beauty to a friend</label><br>
+                    <label><input type="radio" name="definitely-maybe-notsure" checked>Definitely</label><br>
+                    <label><input type="radio" name="definitely-maybe-notsure" checked>maybe</label><br>
+                    <label><input type="radio" name="definitely-maybe-notsure" checked>not sure</label><br>
+                    <br>
+                    <label id="improved">what would you like to see improved?</label><br>
+                    <input type="checkbox" name="frontend-projects" value="frontend">
+                    <label for="frontend-projects">frontend-projects</label><br>
+
+                    <input type="checkbox" name="backend-projects" value="backend">
+                    <label for="backend-projects">backend-projects</label><br>
+
+
+                </form><input type="checkbox" name="challenges" value="challenges">
+                <label for="challenges">challenges</label><br>
+
+                <input type="checkbox" name="wiki" value="wiki">
+                <label for="wiki">wiki</label><br><br>
+
+                <label>Any comments or suggestions</label><br>
+                <textarea id="comment" name="additional" rows="3" cols="40">enter your comments here...</textarea><br>
+                <button type="submit">submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
